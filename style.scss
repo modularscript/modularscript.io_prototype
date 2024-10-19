@@ -1,13 +1,13 @@
 @use '_scss/reset';
+@use '_scss/variables';
 
 /* Base styles for mobile-first approach */
 .container {
 	display: grid;
 	grid-template-areas:
 		'header'
-		'main'
+		'sidebar main'
 		'footer';
-	gap: 1rem;
 }
 
 header {
@@ -23,11 +23,14 @@ main {
 .sidebar-menu {
 	grid-area: sidebar;
 	background-color: lightcoral;
+	visibility: hidden;
 }
 
 footer {
 	grid-area: footer;
 	background-color: lightgray;
+	height: 3rem;
+	width: 100%;
 }
 
 // /* Nested grid container */
