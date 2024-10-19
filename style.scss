@@ -1,0 +1,75 @@
+/* Base styles for mobile-first approach */
+.container {
+	display: grid;
+	grid-template-areas:
+		'header'
+		'main'
+		'footer';
+	gap: 1rem;
+}
+
+header {
+	grid-area: header;
+	background-color: lightblue;
+}
+
+main {
+	grid-area: main;
+	background-color: lightgreen;
+}
+
+.sidebar-menu {
+	grid-area: sidebar;
+	background-color: lightcoral;
+}
+
+footer {
+	grid-area: footer;
+	background-color: lightgray;
+}
+
+// /* Nested grid container */
+// nested-container {
+// 	display: grid;
+// 	grid-template-columns: repeat(3, 1fr);
+// 	gap: 1rem;
+// }
+
+// nested-item {
+// 	background-color: lightyellow;
+// 	padding: 1rem;
+// 	border: 1px solid #ccc;
+// }
+
+/* Tablets and small desktops */
+@media (min-width: 37.5rem) {
+	/* 600px */
+	.container {
+		grid-template-areas:
+			'header header header'
+			'sidebar main main'
+			'footer footer footer';
+	}
+}
+
+/* Medium desktops */
+@media (min-width: 56.25rem) {
+	/* 900px */
+	.container {
+		grid-template-areas:
+			'header header header header'
+			'sidebar main main main'
+			'footer footer footer footer';
+	}
+}
+
+/* Large desktops */
+@media (min-width: 75rem) {
+	/* 1200px */
+	.container {
+		grid-template-areas:
+			'header header header header'
+			'sidebar main main main'
+			'footer footer footer footer';
+	}
+}
