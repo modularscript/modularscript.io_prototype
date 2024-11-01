@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "webhint": "hint"
   },
   "devDependencies": {
+    "hint": "^7.1.13",
     "sass": "^1.80.2",
     "sass-embedded": "^1.80.2",
     "terser": "^5.36.0",
